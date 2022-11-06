@@ -1,0 +1,10 @@
+//
+// Created by w-devin on 11/7/2022.
+//
+
+#ifndef WINDOWS_HACK_REFLECTIVEDLLINJECTION_H
+#define WINDOWS_HACK_REFLECTIVEDLLINJECTION_H
+
+HANDLE WINAPI ReflectiveDLLInject(HANDLE hProcess, LPVOID lpBuffer, DWORD dwLength, LPVOID lpParameter, LPVOID lpLoaderFunName);
+
+#endif //WINDOWS_HACK_REFLECTIVEDLLINJECTION_H
