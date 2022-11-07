@@ -17,7 +17,6 @@ if (ENABLE_UNIT_TEST)
     target_link_libraries(Process_test
             gtest
             gtest_main
-            pthread
             )
 
     include(GoogleTest)
