@@ -2,15 +2,12 @@
 // Created by Mrwyw on 11/7/2022.
 //
 
-#include <stdio.h>
 #include <windows.h>
 #include <tlhelp32.h>
-#include <string.h>
-#include <locale.h>
 
 #include "Process.h"
 
-DWORD findPidByName(LPSTR pname)
+DWORD findPidByName(LPCSTR pname)
 {
     HANDLE h;
     PROCESSENTRY32 procSnapshot;
@@ -31,5 +28,5 @@ DWORD findPidByName(LPSTR pname)
     } while (Process32Next(h, &procSnapshot));
 
     CloseHandle(h);
-    return 0;
+    return 1;
 }
