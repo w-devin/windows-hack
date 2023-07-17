@@ -7,6 +7,6 @@
 #include "Process.h"
 
 TEST(TestFindPidByName, test_find_pid_by_name_1) {
-    LPCSTR process_name = "Notepad";
+    LPCSTR process_name = "notepad.exe";
     EXPECT_NE(findPidByName(process_name), 0);
 }

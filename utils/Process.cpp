@@ -29,5 +29,5 @@ DWORD findPidByName(LPCSTR pname)
     } while (Process32Next(h, &procSnapshot));
 
     CloseHandle(h);
-    return 1;
+    return 0;
 }
